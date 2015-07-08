@@ -1,9 +1,0 @@
-D:\Programming Projects\Daisy\Source\Daisy.Security\bin\Debug\Daisy.Security.dll
-D:\Programming Projects\Daisy\Source\Daisy.Security\bin\Debug\Daisy.Security.pdb
-D:\Programming Projects\Daisy\Source\Daisy.Security\obj\Debug\Daisy.Security.dll
-D:\Programming Projects\Daisy\Source\Daisy.Security\obj\Debug\Daisy.Security.pdb
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Security\bin\Debug\Daisy.Security.dll
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Security\bin\Debug\Daisy.Security.pdb
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Security\obj\Debug\Daisy.Security.dll
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Security\obj\Debug\Daisy.Security.pdb
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Security\obj\Debug\Daisy.Security.csprojResolveAssemblyReference.cache

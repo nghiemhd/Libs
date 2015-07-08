@@ -1,9 +1,0 @@
-D:\Programming Projects\Daisy\Source\Daisy.Common\bin\Debug\Daisy.Common.dll
-D:\Programming Projects\Daisy\Source\Daisy.Common\bin\Debug\Daisy.Common.pdb
-D:\Programming Projects\Daisy\Source\Daisy.Common\obj\Debug\Daisy.Common.dll
-D:\Programming Projects\Daisy\Source\Daisy.Common\obj\Debug\Daisy.Common.pdb
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Common\bin\Debug\Daisy.Common.dll
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Common\bin\Debug\Daisy.Common.pdb
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Common\obj\Debug\Daisy.Common.dll
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Common\obj\Debug\Daisy.Common.pdb
-D:\Programming Projects\Daisy\Source\Libraries\Daisy.Common\obj\Debug\Daisy.Common.csprojResolveAssemblyReference.cache
