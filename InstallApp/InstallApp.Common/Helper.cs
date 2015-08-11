@@ -63,5 +63,10 @@ namespace InstallApp.Common
             }
         }
 
+        public static void UpdateFolderPermission(string accountName, string folderPath, FileSystemRights Rights, AccessControlType controlType)
+        {
+
+        }
+
     }
 }

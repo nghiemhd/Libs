@@ -66,11 +66,12 @@ namespace InstallApp
         private bool ValidateBeforeInstall()
         {
             var errors = new List<string>();
+            string iisMessage = string.Empty;
 
-            var iisState = IISConfiguration.ValidateIIS();
+            var iisState = IISConfiguration.ValidateIIS(out iisMessage);
             if (iisState == IISstate.Disabled)
             {
-                errors.Add("IIS is turned off.");
+                errors.Add(iisMessage);
             }
 
             var isNet45Installed = NETFrameworkDetection.Get45orLaterFromRegistry() == string.Empty ? false : true;

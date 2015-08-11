@@ -25,12 +25,12 @@ namespace InstallApp.Common
             "IIS-WebServerRole",
         };
 
-        public static IISstate ValidateIIS()
+        public static IISstate ValidateIIS(out string outputString)
         {
             var result = IISstate.Disabled;
 
             string arguments = string.Format("/Online /Get-FeatureInfo /FeatureName:IIS-WebServer");
-            var outputString = Run("dism", arguments);
+            outputString = Run("dism", arguments);
 
             var messages = outputString.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             var state = messages.Where(x => x.IndexOf("State :", 0) >= 0).FirstOrDefault();
