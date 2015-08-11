@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -52,6 +53,9 @@ namespace InstallApp
                         var canUpdateWebconfig = UpdateWebconfig();
 
                         Helper.Copy(txtSource.Text, txtDestination.Text);
+
+                        var mediaPath = Path.Combine(this.txtDestination.Text, "Media");
+                        Helper.UpdateFolderPermission("IIS_IUSRS", mediaPath, FileSystemRights.Modify, AccessControlType.Allow);
 
                         MessageBox.Show("Install successfully.", "Install");
                     }
