@@ -12,12 +12,15 @@ namespace InstallApp.Common
         private static string[] featureNames = new[] 
         {
             "IIS-ApplicationDevelopment",
+            "IIS-ASPNET",
+            "IIS-ASPNET45",
             "IIS-CommonHttpFeatures",
             "IIS-DefaultDocument",
             "IIS-ISAPIExtensions",
             "IIS-ISAPIFilter",
             "IIS-ManagementConsole",
-            "IIS-NetFxExtensibility",
+            "IIS-NetFxExtensibility /all",
+            "IIS-NetFxExtensibility45 /all",
             "IIS-RequestFiltering",
             "IIS-Security",
             "IIS-StaticContent",

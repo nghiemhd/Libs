@@ -11,6 +11,8 @@ namespace InstallApp.Common
         public static readonly string VDUId = "VDUId";
         public static readonly string ApiEndpoint = "ApiEndpoint";
         public static readonly string Webconfig = "Web.config";
+        public static readonly string Media = "Media";
+        public static readonly string AppData = "App_Data";
 
         /// <summary>
         /// <para>378389</para>

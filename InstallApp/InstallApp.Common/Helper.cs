@@ -74,7 +74,7 @@ namespace InstallApp.Common
                 none = InheritanceFlags.None;
 
                 //set on dir itself
-                var accessRule = new FileSystemAccessRule(accountName, Rights, none, PropagationFlags.NoPropagateInherit, AccessControlType.Allow);
+                var accessRule = new FileSystemAccessRule(accountName, Rights, none, PropagationFlags.NoPropagateInherit, controlType);
                 var directoryInfo = new DirectoryInfo(folderPath);
                 var dSecurity = directoryInfo.GetAccessControl();
                 dSecurity.ModifyAccessRule(AccessControlModification.Set, accessRule, out modified);
@@ -84,7 +84,7 @@ namespace InstallApp.Common
                 iFlags = InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit;
 
                 //Add Access rule for the inheritance
-                var accessRule2 = new FileSystemAccessRule(accountName, Rights, iFlags, PropagationFlags.InheritOnly, AccessControlType.Allow);
+                var accessRule2 = new FileSystemAccessRule(accountName, Rights, iFlags, PropagationFlags.InheritOnly, controlType);
                 dSecurity.ModifyAccessRule(AccessControlModification.Add, accessRule2, out modified);
 
                 directoryInfo.SetAccessControl(dSecurity);

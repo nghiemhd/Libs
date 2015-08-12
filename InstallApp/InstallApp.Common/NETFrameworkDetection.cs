@@ -98,19 +98,19 @@ namespace InstallApp.Common
         {
             if (releaseKey >= 393273)
             {
-                return "4.6 RC or later";
+                return ".NET Framework 4.6 RC or later installed";
             }
             if (releaseKey >= 379893)
             {
-                return "4.5.2 or later";
+                return ".NET Framework 4.5.2 or later installed";
             }
             if (releaseKey >= 378675)
             {
-                return "4.5.1 or later";
+                return ".NET Framework 4.5.1 or later installed";
             }
             if (releaseKey >= 378389)
             {
-                return "4.5 or later";
+                return ".NET Framework 4.5 or later installed";
             }
             return string.Empty;
         }
