@@ -75,6 +75,9 @@ namespace InstallApp
                             UpdateLogger(string.Format("...Add modify permissions for {0} for accessing {1}", account, appDataPath));
                         }
 
+                        Helper.UpdateFolderPermission("Users", this.txtDestination.Text, FileSystemRights.Modify, AccessControlType.Allow);
+                        UpdateLogger(string.Format("...Add modify permissions for {0} for accessing {1}", "Users", this.txtDestination.Text));
+
                         UpdateLogger("Install successfully.");
                         MessageBox.Show("Install successfully.", "Install");
                     }
